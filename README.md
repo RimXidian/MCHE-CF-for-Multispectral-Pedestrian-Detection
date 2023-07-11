@@ -44,7 +44,7 @@ Train the dataset using following commands:
 ```
 python trainval_net.py
 ```
-You can download the best model for the KAIST dataset in the paper [here](https://pan.baidu.com/s/169SszWgskGowMKIODRTppw), (extract code: `aaaa`)
+You can download the trained model parameters [here](https://pan.baidu.com/s/169SszWgskGowMKIODRTppw), (extract code: `aaaa`) for direct testing on the KAIST dataset. 
 ## 5. Test
 Test the dataset using following commands:
 ```
