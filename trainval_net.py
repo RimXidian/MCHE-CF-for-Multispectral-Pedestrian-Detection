@@ -259,13 +259,13 @@ if __name__ == '__main__':
     print(fasterRCNN)
 
 
-    # load_name = os.path.join('./data/pretrained_model', 'pretrained.pth')
-    # print("loading checkpoint %s" % (load_name))
-    # pretreained_model = torch.load(load_name)['model']
-    # model_dicts = fasterRCNN.state_dict()
-    # state_dict = {k: v for k, v in pretreained_model.items() if k in model_dicts.keys()}
-    # model_dicts.update(state_dict)
-    # fasterRCNN.load_state_dict(model_dicts)
+    load_name = os.path.join('./data/pretrained_model', 'pretrained.pth')
+    print("loading checkpoint %s" % (load_name))
+    pretreained_model = torch.load(load_name)['model']
+    model_dicts = fasterRCNN.state_dict()
+    state_dict = {k: v for k, v in pretreained_model.items() if k in model_dicts.keys()}
+    model_dicts.update(state_dict)
+    fasterRCNN.load_state_dict(model_dicts)
 
 
     lr = cfg.TRAIN.LEARNING_RATE

@@ -1,4 +1,4 @@
-# MIA
+# MCHE-CF for Multispectral Pedestrian Detection
 
 ## Introduction
 
@@ -24,6 +24,7 @@ You need to prepare the dataset with the instructions in [pytorch-faster-rcnn](h
 We use VGG16 pretrained models in our experiments. You can download the model from:
 
 * VGG16: [Dropbox](https://www.dropbox.com/s/s3brpk0bdq60nyb/vgg16_caffe.pth?dl=0), [VT Server](https://filebox.ece.vt.edu/~jw2yang/faster-rcnn/pretrained-base-models/vgg16_caffe.pth)
+* pretrained: [pretrained model](https://pan.baidu.com/s/169SszWgskGowMKIODRTppw), (extract code: `aaaa`)
 
 Download them and put them into the data/pretrained_model/.
 
@@ -43,7 +44,7 @@ Train the dataset using following commands:
 ```
 python trainval_net.py
 ```
-
+You can download the best model for the KAIST dataset in the paper [here](https://pan.baidu.com/s/169SszWgskGowMKIODRTppw), (extract code: `aaaa`)
 ## 5. Test
 Test the dataset using following commands:
 ```
@@ -57,8 +58,8 @@ The result will generate at './result', then use the matlab [code](https://githu
 If you find our work useful in your research, please consider citing:
 
 ```
-@inproceedings{MIA,
-    author = {Ruimin Li, Jiajun Xiang and Shuiping Gou},
+@inproceedings{MCHE-CF for Multispectral Pedestrian Detection,
+    author = {Ruimin Li, Jiajun Xiang, Feixiang Sun, Ye Yuan, Longwu Yuan, Shuiping Gou},
     title = {Multiscale Cross-modal Homogeneity Enhancement and Confidence-aware Fusion for Multispectral Pedestrian Detection},
     booktitle = IEEE Transactions on Multimedia,
     year = {2023}
